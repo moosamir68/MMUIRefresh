@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MMUIRefresh_Example' do
+  pod 'MMUIRefresh', :path => '../'
+
+  target 'MMUIRefresh_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
