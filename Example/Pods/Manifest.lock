@@ -1,0 +1,16 @@
+PODS:
+  - MMUIRefresh (0.1.0)
+
+DEPENDENCIES:
+  - MMUIRefresh (from `/Users/Moosa/Documents/App/Develop/MMUIRefresh`)
+
+EXTERNAL SOURCES:
+  MMUIRefresh:
+    :path: /Users/Moosa/Documents/App/Develop/MMUIRefresh
+
+SPEC CHECKSUMS:
+  MMUIRefresh: 97d031ef7a8aeb79f6995f431274123ef584b3eb
+
+PODFILE CHECKSUM: 5a7fa5cb6abd536747756c8c188c56f033476d61
+
+COCOAPODS: 1.2.1
