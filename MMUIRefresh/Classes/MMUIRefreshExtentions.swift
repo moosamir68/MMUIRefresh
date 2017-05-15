@@ -145,7 +145,7 @@ extension UIView {
     
     //MARK: -
     //MARK: Methods
-    func initPullToRefresh(){
+    public func initPullToRefresh(){
         shapeLayer = CAShapeLayer();
         animating = false;
         
