@@ -172,7 +172,7 @@ extension UIView {
         self.addSubview(self.r2ControlPointView!)
         self.addSubview(self.r3ControlPointView!)
         
-        layoutControlPoints(baseHeight: minimalHeight, waveHeight: 0.0, locationX: self.bounds.width / 2.0)
+        layoutControlPoints(minimalHeight, waveHeight: 0.0, locationX: self.bounds.width / 2.0)
         updateShapeLayer()
         
         self.displayLink = CADisplayLink(target: self, selector: #selector(updateShapeLayer))
@@ -210,12 +210,12 @@ extension UIView {
             
             let locationX = gesture.location(in: gesture.view).x
             
-            layoutControlPoints(baseHeight: baseHeight, waveHeight: waveHeight, locationX: locationX)
+            layoutControlPoints(baseHeight, waveHeight: waveHeight, locationX: locationX)
             updateShapeLayer()
         }
     }
     
-    fileprivate func layoutControlPoints(baseHeight: CGFloat, waveHeight: CGFloat, locationX: CGFloat) {
+    fileprivate func layoutControlPoints(_ baseHeight: CGFloat, waveHeight: CGFloat, locationX: CGFloat) {
         let width = self.bounds.width
         
         let minLeftX = min((locationX - width / 2.0) * 0.28, 0.0)
